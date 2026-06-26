@@ -21,7 +21,7 @@ jobs:
       - name: Run Python AcroForm Rotator
         run: |
           mkdir -p "Rotated_Output"
-          python "PDF-Work-Order-To-Hardware-Sheet/AcroForm Rotator/orient_fields.py" --input_dir "PDF-Work-Order-To-Hardware-Sheet/AcroForm Rotator/Rotation Ref Sheets" --output_dir "Rotated_Output"
+          python orient_fields.py --input_dir PDFs --output_dir Rotated_Output
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
